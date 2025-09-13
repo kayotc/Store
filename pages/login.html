@@ -3,24 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cadastro - Loja Online</title>
+  <title>Login - Loja Online</title>
   <link rel="stylesheet" href="../style/register.css">
 </head>
 <body>
   <header>
     <div class="logo"><h1>LOJA</h1></div>
-
   </header>
 
   <section class="register">
     <div class="form-container">
-      <h2>Crie sua conta</h2>
-      <form id="register-form">
-        <div class="form-group">
-          <label for="name">Nome completo</label>
-          <input type="text" id="name" required>
-        </div>
-
+      <h2>Entrar</h2>
+      <form id="login-form">
         <div class="form-group">
           <label for="email">E-mail</label>
           <input type="email" id="email" required>
@@ -31,19 +25,14 @@
           <input type="password" id="password" required>
         </div>
 
-        <div class="form-group">
-          <label for="confirm-password">Confirme sua senha</label>
-          <input type="password" id="confirm-password" required>
-        </div>
-
-        <button type="submit" class="btn-submit">Cadastrar</button>
+        <button type="submit" class="btn-submit">Entrar</button>
       </form>
-      <p class="login-link">Já tem uma conta? <a href="login.html">Entrar</a></p>
+      <p class="login-link">Não tem conta? <a href="index.html">Cadastrar</a></p>
     </div>
   </section>
 
   <footer>© 2025 Loja Online - Todos os direitos reservados</footer>
 
-  <script src="../scripts/register.js"></script>
+  <script src="../scripts/login.js"></script>
 </body>
 </html>
