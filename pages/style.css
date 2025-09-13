@@ -275,7 +275,7 @@ header nav p:hover{
   cursor: pointer;
   margin-bottom: 10px;
   background-color: #28a745;
-  background-image: url('./assets/carrinho.svg');
+  background-image: url('/assets/carrinho.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
