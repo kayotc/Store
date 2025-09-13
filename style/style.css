@@ -20,11 +20,12 @@ header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 20px 60px;
+  padding: 10px 60px;
   background: var(--background);
   border-bottom: 1px solid #222;
   flex-wrap: wrap;
   gap: 15px;
+  box-shadow: 4px 4px 10px rgba(0,0,0,.5);
 }
 
 header .logo {
@@ -66,16 +67,18 @@ header nav a:hover::after{
 
 
 
-header nav a:hover{
+header nav p:hover{
   color: #ffffff;
-  transform: scale(.2);
+  transform: scale(1.15);
+  transition: ease-in-out 350ms;
 }
 
 /* Botões */
 .clean-car {
   background: #ec051cf5;
-  padding: 10px;
-  height: 60px;
+  display: none;
+  padding: 5px;
+  height: 50px;
   border: none;
   border-radius: 8px;
   color: var(--color);
@@ -91,7 +94,7 @@ header nav a:hover{
 .btn-green {
   background: #28a745;
   padding: 5px;
-  height: 60px;
+  height: 50px;
   border: none;
   border-radius: 8px;
   color: var(--color);
@@ -115,28 +118,81 @@ header nav a:hover{
 /* Hero */
 .hero {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 60px;
-  background: linear-gradient(to right, #003f1a, #144b03);
+  position: relative;
+  height: 350px;
+  padding: 40px; 
+  overflow: hidden;
+  background: linear-gradient(to right, #2196f3, #c3e3fd);
+}
+
+.hero h1{
+  font-size: 48px;
+  margin: auto 0;
+}
+
+.hero img{
+  position: absolute;
+  filter: drop-shadow(0 0 10px #000);
+  right: -10%;
+  bottom: 0;
 }
 
 /* Categorias */
 .categorias {
   background: var(--color);
-  padding: 50px 60px;
-
+  padding: 60px;
   a{
     color: var(--background);
   }
 }
 
+.categorias .grid .card h3 {
+  text-align: center;
+}
+
+.categorias .grid{
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.categorias .grid .card {
+  display: flex;
+  height: 250px;
+  width: 250px;
+  flex-direction: column;
+  background: #f2f2f2;
+  padding: 10px 20px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,.5);
+  flex-grow: .4;
+  gap: 10px;
+  margin: 20px auto;
+  border-radius: 12px;
+  text-align: center;
+  transition: ease-in-out 350ms;
+
+  &:hover{
+    transform: scale(1.02);
+    box-shadow: 4px 4px 8px rgba(0,0,0,.5);
+  }
+}
+
+.categorias .grid .card img{
+    margin: auto;
+    border-radius: 7px;
+    height: 90%;
+    width: 90%;
+  }
+
+
 /* Produtos */
 .produtos {
-  background: #fff;
-  color: #000;
+  background: var(--color);
+  color: var(--background);
   padding: 50px 60px;
-
+  box-shadow: 2px 2px 10px rgba(0,0,0,.5);
   a{
     color: var(--background);
   }
