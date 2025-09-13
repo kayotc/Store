@@ -19,5 +19,5 @@ registerForm.addEventListener('submit', (e) => {
   localStorage.setItem('user', JSON.stringify(user));
 
   alert("Cadastro realizado com sucesso!");
-  window.location.href = "login.html"; // Redireciona para login
+  window.location.href = "pages/login.html"; // Redireciona para login
 });
