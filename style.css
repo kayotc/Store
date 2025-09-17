@@ -360,3 +360,34 @@ footer {
     }
   }
 }
+
+
+.pix{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  min-height: 350px;
+  gap: 30px;
+  align-items: center;
+  padding: 40px;
+  background: linear-gradient(to right, #060e3a, #000f52);
+  box-shadow: 2px 2px 4px #ffffff13;
+}
+
+.pix-div{
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+
+  img{
+    height: 30%;
+    width: 30%;
+  }
+}
+
+.pix h1 {
+  font-size: 48px;
+  margin: auto 0;
+}
