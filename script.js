@@ -28,7 +28,7 @@ const storedUser = JSON.parse(localStorage.getItem('storedUser')); // mesma chav
 
 if(storedUser && storedUser.name) {
   const user = document.querySelector("#userName"); // precisa existir no HTML
-  user.textContent = `Olá,`+ storedUser.name.charAt(0).toUpperCase()+storedUser.name.slice(1); // exibe o nome do usuário logado, limitado a 10 caracteres
+  user.textContent = `Olá, `+ storedUser.name.charAt(0).toUpperCase()+storedUser.name.slice(1); // exibe o nome do usuário logado, limitado a 10 caracteres
 }
 
 
